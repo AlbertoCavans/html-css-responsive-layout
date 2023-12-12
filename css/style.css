@@ -27,11 +27,6 @@ a {
 }
 
 /* UTILS */
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 .clearfix::after {
   content: "";
@@ -50,12 +45,16 @@ a {
 /* HEADER */
 
 .header-page {
-  height: 20vw;
   background-color: hsl(208.7deg 100% 49.61%);
+}
+
+.container {
+  height: 20vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5vw;
+  text-align: center;
 }
 
 .box-logo {
@@ -64,6 +63,10 @@ a {
   width: 25vw;
   background-color: pink;
   padding: 2px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menù {
@@ -72,12 +75,18 @@ a {
   width: 14vw;
   background-color: pink;
   padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 375px) {
   .header-page {
-    height: 10vw;
     background-color: hsl(208.7deg 100% 49.61%);
+  }
+
+  .container {
+    height: 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,7 +98,6 @@ a {
     height: 7vw;
     width: 7vw;
     background-color: pink;
-    padding: 12px;
   }
 
   .box-logo {
@@ -98,5 +106,44 @@ a {
     width: 14vw;
     background-color: pink;
     padding: 4px;
+  }
+}
+
+@media screen and (min-width: 705px) {
+  .header-page {
+    height: 4vw;
+    background-color: hsl(208.7deg 100% 49.61%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2vw;
+  }
+
+  .container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .box-logo {
+    /* DEBUG */
+    height: 3vw;
+    width: 7vw;
+    background-color: pink;
+    padding: 8px;
+  }
+
+  .menù {
+    /* DEBUG */
+    height: 3vw;
+    width: 3vw;
+    background-color: pink;
+  }
+
+  .menù i {
+    display: none;
   }
 }
