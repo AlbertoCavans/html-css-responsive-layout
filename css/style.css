@@ -50,24 +50,26 @@ a {
 /* HEADER */
 
 .header-page {
-  height: 10vw;
+  height: 20vw;
   background-color: hsl(208.7deg 100% 49.61%);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1vw;
+  padding: 5vw;
 }
 
 .box-logo {
   /* DEBUG */
-  height: 8vw;
-  width: 20vw;
+  height: 14vw;
+  width: 25vw;
   background-color: pink;
+  padding: 2px;
 }
 
 .menù {
   /* DEBUG */
-  height: 8vw;
-  width: 8vw;
+  height: 14vw;
+  width: 14vw;
   background-color: pink;
+  padding: 6px;
 }
