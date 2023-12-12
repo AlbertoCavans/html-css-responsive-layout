@@ -73,3 +73,30 @@ a {
   background-color: pink;
   padding: 6px;
 }
+
+@media screen and (min-width: 375px) {
+  .header-page {
+    height: 10vw;
+    background-color: hsl(208.7deg 100% 49.61%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+  }
+
+  .menù {
+    /* DEBUG */
+    height: 7vw;
+    width: 7vw;
+    background-color: pink;
+    padding: 12px;
+  }
+
+  .box-logo {
+    /* DEBUG */
+    height: 7vw;
+    width: 14vw;
+    background-color: pink;
+    padding: 4px;
+  }
+}
