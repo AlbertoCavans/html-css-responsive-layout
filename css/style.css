@@ -26,6 +26,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  padding: 0 5vw;
+  width: 100%;
+}
+
 /* UTILS */
 
 .clearfix::after {
@@ -91,18 +96,17 @@ a {
 /* MAIN */
 /* ? OVERVIEW SECTION */
 
-.container section {
-  padding: 15vw 0;
+section {
   background-color: white;
 }
 
-.container section:nth-of-type(even) {
+section:nth-of-type(even) {
   padding: 15vw 0;
   background-color: hsl(243.66deg 60.29% 73.33%);
   color: white;
 }
 
-.container section:nth-of-type(even) .row .col {
+section:nth-of-type(even) .row .col {
   background-color: white;
   color: black;
 }
