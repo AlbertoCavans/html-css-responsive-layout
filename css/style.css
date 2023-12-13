@@ -52,7 +52,7 @@ a {
   justify-content: center;
 }
 
-.container {
+.container-header {
   display: flex;
   width: 100%;
   align-items: center;
@@ -90,6 +90,35 @@ a {
 
 /* MAIN */
 /* ? OVERVIEW SECTION */
+
+.container section {
+  padding: 15vw 0;
+  background-color: white;
+}
+
+.container section:nth-of-type(even) {
+  padding: 15vw 0;
+  background-color: hsl(243.66deg 60.29% 73.33%);
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -5vw;
+}
+.overview-section .row .col {
+  width: 80vw;
+  margin: 5vw auto;
+  background-color: hsl(207.57deg 100% 85.49%);
+  min-height: 80vw;
+}
+
+.row .col .card .col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
 /* ! RESPONSIVE TABLET */
 @media screen and (min-width: 375px) {
