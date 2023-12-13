@@ -111,6 +111,10 @@ a {
   margin: 5vw auto;
   background-color: hsl(207.57deg 100% 85.49%);
   min-height: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .row .col .card .row .col {
@@ -132,7 +136,26 @@ a {
 /* ? PLANNING SECTION */
 
 .planning-section .row .col:first-child {
-  background-color: none;
+  background-color: transparent;
+}
+
+.planning-section .row .col:last-child {
+  background-color: white;
+  color: black;
+}
+
+.planning-section .row .col:first-child h3,
+.planning-section .row .col:first-child p {
+  align-self: self-start;
+}
+
+/* ? PARTNERS SECTION */
+
+.partners-section .row .col:first-child {
+  background-color: transparent;
+}
+.partners-section .row .col {
+  background-color: hsl(243.66deg 60.29% 73.33%);
 }
 
 /* ! RESPONSIVE TABLET */
