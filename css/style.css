@@ -113,11 +113,20 @@ a {
   min-height: 80vw;
 }
 
-.row .col .card .col {
+.row .col .card .row .col {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+  height: 80vw;
+}
+
+.row .col .card .row .col .box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
 /* ? PLANNING SECTION */
