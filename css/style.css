@@ -166,7 +166,15 @@ a {
   align-items: start;
 }
 
+.benefits-section h3 {
+  text-align: center;
+}
+
 /* ? ABOUT US */
+
+.about-us-section .row .col {
+  background-color: transparent;
+}
 
 /* ! RESPONSIVE TABLET */
 @media screen and (min-width: 375px) {
