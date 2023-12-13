@@ -47,10 +47,14 @@ a {
 .header-page {
   background-color: hsl(208.7deg 100% 49.61%);
   margin: 0;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 5vw;
@@ -85,19 +89,25 @@ a {
 }
 
 /* MAIN */
-/* ! OVERVIEW SECTION */
+/* ? OVERVIEW SECTION */
 
+/* ! RESPONSIVE TABLET */
 @media screen and (min-width: 375px) {
   .header-page {
     background-color: hsl(208.7deg 100% 49.61%);
+    margin: 0;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
   }
 
   .container {
-    height: 10vw;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw;
+    padding: 3vw;
+    text-align: center;
   }
 
   .box-logo {
@@ -120,6 +130,7 @@ a {
   }
 }
 
+/* ! RESPONSIVE COMPUTER */
 @media screen and (min-width: 705px) {
   .header-page {
     height: 4vw;
