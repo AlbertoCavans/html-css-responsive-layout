@@ -46,10 +46,10 @@ a {
 
 .header-page {
   background-color: hsl(208.7deg 100% 49.61%);
+  margin: 0;
 }
 
 .container {
-  height: 20vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,6 +80,13 @@ a {
   justify-content: center;
 }
 
+.menù ul {
+  display: none;
+}
+
+/* MAIN */
+/* ! OVERVIEW SECTION */
+
 @media screen and (min-width: 375px) {
   .header-page {
     background-color: hsl(208.7deg 100% 49.61%);
@@ -93,6 +100,14 @@ a {
     padding: 2vw;
   }
 
+  .box-logo {
+    /* DEBUG */
+    height: 7vw;
+    width: 14vw;
+    background-color: pink;
+    padding: 4px;
+  }
+
   .menù {
     /* DEBUG */
     height: 7vw;
@@ -100,12 +115,8 @@ a {
     background-color: pink;
   }
 
-  .box-logo {
-    /* DEBUG */
-    height: 7vw;
-    width: 14vw;
-    background-color: pink;
-    padding: 4px;
+  .menù ul {
+    display: none;
   }
 }
 
@@ -139,8 +150,19 @@ a {
   .menù {
     /* DEBUG */
     height: 3vw;
-    width: 3vw;
     background-color: pink;
+  }
+
+  .menù ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .menù ul li {
+    height: 3vw;
+    width: 7vw;
+    background-color: gray;
+    margin: 0 0.5vw;
   }
 
   .menù i {
