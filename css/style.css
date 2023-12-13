@@ -99,6 +99,7 @@ a {
 .container section:nth-of-type(even) {
   padding: 15vw 0;
   background-color: hsl(243.66deg 60.29% 73.33%);
+  color: white;
 }
 
 .container section:nth-of-type(even) .row .col {
@@ -174,6 +175,19 @@ a {
 
 .about-us-section .row .col {
   background-color: transparent;
+}
+
+/* ? GET STARTED SECTION */
+
+#center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 20vw;
+  text-align: center;
+  background-color: hsl(243.66deg 60.29% 73.33%);
+  color: white;
 }
 
 /* ! RESPONSIVE TABLET */
