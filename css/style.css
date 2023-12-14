@@ -251,8 +251,21 @@ footer p a {
   }
 }
 
+/* MAIN */
+
+/* ? OVERVIEW SECTION */
+.overview-section .container .row .col:first-child {
+  width: calc((100% / 3) * 2);
+}
+
+.overview-section .container .row .col {
+  width: calc(100% / 3);
+  padding: 0 3vw;
+}
+
 /* ! RESPONSIVE COMPUTER */
 @media screen and (min-width: 705px) {
+  /* HEADER */
   .header-page {
     height: 4vw;
     background-color: hsl(208.7deg 100% 49.61%);
