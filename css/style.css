@@ -194,8 +194,29 @@ section:nth-of-type(even) .row .col {
   color: white;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: hsl(0deg 0% 20%);
+  height: 70vw;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 10vw;
+}
+
+footer p a {
+  color: hsl(243.66deg 60.29% 73.33%);
+  text-decoration: underline;
+}
+
 /* ! RESPONSIVE TABLET */
 @media screen and (min-width: 375px) {
+  /* HEADER */
   .header-page {
     background-color: hsl(208.7deg 100% 49.61%);
     margin: 0;
@@ -204,7 +225,7 @@ section:nth-of-type(even) .row .col {
     justify-content: center;
   }
 
-  .container {
+  .container-header {
     display: flex;
     width: 100%;
     align-items: center;
