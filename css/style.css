@@ -185,8 +185,14 @@ section:nth-of-type(even) .row .col {
 
 /* ? ABOUT US */
 
+.container-slim {
+  padding: 0 5vw;
+  width: 80%;
+}
+
 .about-us-section .row .col {
   background-color: transparent;
+  width: 70vw;
 }
 
 /* ? GET STARTED SECTION */
@@ -269,42 +275,59 @@ footer p a {
     width: calc(100% / 3);
     padding: 0 3vw;
   }
-}
 
-/* ? PLANNING SECTION */
+  /* ? PLANNING SECTION */
 
-/* ? PARTNERS SECTION */
+  /* ? PARTNERS SECTION */
 
-.partners-section .container .row .col {
-  width: 80vw;
-  margin: 5vw auto;
-  max-height: 30vw;
-  min-height: 30vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+  .partners-section .container .row .col {
+    width: 80vw;
+    margin: 5vw auto;
+    max-height: 30vw;
+    min-height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-.partners-section .row .col .card {
-  background-color: hsl(207.57deg 100% 85.49%);
-  width: 100%;
-  max-height: 30vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+  .partners-section .row .col .card {
+    background-color: hsl(207.57deg 100% 85.49%);
+    width: 100%;
+    max-height: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-/* ? BENEFITS SECTION */
+  /* ? BENEFITS SECTION */
 
-.benefits-section .container .row .col {
-  width: 40vw;
-  margin: 5vw auto;
-  min-height: 40vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  .benefits-section .container .row .col {
+    width: 40vw;
+    margin: 5vw auto;
+    min-height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* ? ABOUT US SECTION */
+  .container-slim {
+    padding: 0 10vw;
+    width: 100%;
+  }
+
+  .about-us-section .container-slim .row .col:first-child {
+    width: calc((80vw / 3) * 2);
+    padding-right: 2.5vw;
+  }
+
+  .about-us-section .container-slim .row .col {
+    width: calc(80vw / 3);
+    padding: 0 3vw;
+    padding-left: 2.5vw;
+  }
 }
 
 /* ! RESPONSIVE DESKTOP */
