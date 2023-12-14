@@ -433,4 +433,42 @@ footer p a {
   .overview-section .container .row .col:first-child {
     width: calc((60vw / 3 * 2));
   }
+
+  /* ? PLANNING SECTION */
+
+  .planning-section .container .row {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  .planning-section .container .row .col {
+    float: left;
+    width: 30vw;
+  }
+
+  /* ? PARTNERS SECTION */
+
+  .partners-section {
+    margin: 7vw;
+  }
+  .partners-section .container .row .col {
+    margin: 1vw auto;
+    max-height: 10vw;
+    min-height: 10vw;
+  }
+
+  /* ? BENEFITS SECTION */
+
+  .benefits-section .container .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefits-section .container .row .col {
+    margin: 1vw auto;
+    max-height: 20vw;
+    min-height: 20vw;
+    width: 20vw;
+  }
 }
