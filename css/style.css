@@ -486,9 +486,17 @@ footer p a {
     height: 25vw;
   }
 
-  /* ? ABOUT US SECTION */
+  /* ? GET STARTED SECTION */
 
   #center-container {
     padding: 0 20vw;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 0 35vw;
+    height: 15vw;
+    font-size: 0.5rem;
   }
 }
