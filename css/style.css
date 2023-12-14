@@ -218,7 +218,6 @@ footer p a {
 @media screen and (min-width: 375px) {
   /* HEADER */
   .header-page {
-    background-color: hsl(208.7deg 100% 49.61%);
     margin: 0;
     height: 10vw;
     display: flex;
@@ -238,7 +237,6 @@ footer p a {
     /* DEBUG */
     height: 7vw;
     width: 14vw;
-    background-color: pink;
     padding: 4px;
   }
 
@@ -246,7 +244,6 @@ footer p a {
     /* DEBUG */
     height: 7vw;
     width: 7vw;
-    background-color: pink;
   }
 
   .menù ul {
