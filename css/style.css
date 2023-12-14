@@ -117,6 +117,7 @@ section:nth-of-type(even) .row .col {
   flex-wrap: wrap;
   margin: 0 -5vw;
 }
+
 .row .col {
   width: 80vw;
   margin: 5vw auto;
@@ -332,23 +333,47 @@ footer p a {
 
 /* ! RESPONSIVE DESKTOP */
 @media screen and (min-width: 705px) {
+  /* GENERAL */
+
+  .container .row .col .card .row .col {
+    height: calc(60vw / 3);
+  }
+
+  .container .row .col .card .row {
+    height: calc(60vw / 3 * 2);
+  }
+
+  .row .col {
+    min-height: calc(60vw / 3);
+    margin: 0.8vw auto;
+  }
+
+  .row .col .card {
+    height: calc(60vw / 3);
+  }
+
+  .row {
+    margin: 0 -0.8vw;
+    width: 60vw;
+  }
+
   /* HEADER */
   .header-page {
     height: 4vw;
     background-color: hsl(208.7deg 100% 49.61%);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.2vw;
+    justify-content: center;
   }
 
-  .container {
-    width: 60%;
+  .container-header {
     display: flex;
+    width: 60vw;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
+    text-align: center;
     margin: 0 auto;
-    padding: 0 15px;
   }
 
   .box-logo {
@@ -362,22 +387,49 @@ footer p a {
   .menù {
     /* DEBUG */
     height: 3vw;
-    background-color: pink;
+    width: auto;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
   }
 
   .menù ul {
     display: flex;
     align-items: center;
+    background-color: pink;
   }
 
   .menù ul li {
     height: 3vw;
-    width: 7vw;
+    width: 4vw;
     background-color: gray;
-    margin: 0 0.5vw;
+    margin: 0;
+    border: 3px dashed red;
   }
 
   .menù i {
     display: none;
+  }
+
+  /* MAIN */
+
+  /* ? OVERVIEW SECTION */
+  .container {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .overview-section .container .row .col {
+    padding: 0 0.8vw;
+  }
+
+  .overview-section .container .row .col:first-child {
+    width: calc((60vw / 3 * 2));
   }
 }
