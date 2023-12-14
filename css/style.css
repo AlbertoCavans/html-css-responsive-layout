@@ -485,4 +485,10 @@ footer p a {
     background-color: white;
     height: 25vw;
   }
+
+  /* ? ABOUT US SECTION */
+
+  #center-container {
+    padding: 0 20vw;
+  }
 }
