@@ -344,6 +344,10 @@ footer p a {
     width: calc(60vw / 3 * 2);
   }
 
+  section:nth-of-type(even) {
+    padding: 5vw 0;
+  }
+
   .row .col {
     min-height: calc(60vw / 3);
     margin: 0.8vw auto;
@@ -354,7 +358,7 @@ footer p a {
   }
 
   .row {
-    margin: 0 -0.8vw;
+    margin: 0;
     width: 60vw;
   }
 
@@ -372,7 +376,7 @@ footer p a {
     width: 60vw;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 0.8vw;
     text-align: center;
     margin: 0 auto;
   }
@@ -449,8 +453,9 @@ footer p a {
 
   /* ? PARTNERS SECTION */
 
-  .partners-section {
-    margin: 7vw;
+  section {
+    margin: 0;
+    padding: 5vw;
   }
   .partners-section .container .row .col {
     margin: 1vw auto;
@@ -460,15 +465,24 @@ footer p a {
 
   /* ? BENEFITS SECTION */
 
-  .benefits-section .container .row {
-    display: flex;
-    flex-wrap: wrap;
+  .benefits-section .container {
+    display: block;
   }
 
   .benefits-section .container .row .col {
-    margin: 1vw auto;
-    max-height: 20vw;
-    min-height: 20vw;
+    margin: 0.8vw -1.6vw;
+    max-height: 25vw;
+    min-height: 25vw;
     width: 20vw;
+    background-color: transparent;
+  }
+
+  .benefits-section .container .row {
+    justify-content: space-between;
+  }
+
+  .benefits-section .container .row .col .card {
+    background-color: white;
+    height: 25vw;
   }
 }
