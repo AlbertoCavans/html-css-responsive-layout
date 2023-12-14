@@ -336,11 +336,12 @@ footer p a {
   /* GENERAL */
 
   .container .row .col .card .row .col {
+    width: calc(60vw / 3);
     height: calc(60vw / 3);
   }
 
   .container .row .col .card .row {
-    height: calc(60vw / 3 * 2);
+    width: calc(60vw / 3 * 2);
   }
 
   .row .col {
