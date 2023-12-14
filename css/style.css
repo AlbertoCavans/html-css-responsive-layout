@@ -295,7 +295,19 @@ footer p a {
   flex-direction: column;
 }
 
-/* ! RESPONSIVE COMPUTER */
+/* ? BENEFITS SECTION */
+
+.benefits-section .container .row .col {
+  width: 40vw;
+  margin: 5vw auto;
+  min-height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ! RESPONSIVE DESKTOP */
 @media screen and (min-width: 705px) {
   /* HEADER */
   .header-page {
