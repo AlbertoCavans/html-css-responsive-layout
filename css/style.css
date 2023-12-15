@@ -180,6 +180,10 @@ section:nth-of-type(even) .row .col {
   align-items: start;
 }
 
+.benefits-section .row .col .card {
+  background-color: white;
+}
+
 .benefits-section h3 {
   text-align: center;
 }
@@ -187,13 +191,14 @@ section:nth-of-type(even) .row .col {
 /* ? ABOUT US */
 
 .container-slim {
-  padding: 0 5vw;
+  margin: 0 5vw;
   width: 80%;
 }
 
 .about-us-section .row .col {
   background-color: transparent;
   width: 70vw;
+  margin: 5vw auto;
 }
 
 /* ? GET STARTED SECTION */
@@ -486,7 +491,6 @@ footer p a {
   }
 
   .benefits-section .container .row .col .card {
-    background-color: white;
     height: 25vw;
   }
 
