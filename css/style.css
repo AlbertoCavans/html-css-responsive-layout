@@ -266,6 +266,22 @@ footer p a {
     width: 7vw;
   }
 
+  .row .col {
+    min-height: 60vw;
+  }
+
+  section:nth-of-type(even) {
+    padding: 5vw 0;
+  }
+
+  .row .col .card {
+    height: 60vw;
+  }
+
+  .row .col .card .row .col {
+    height: 60vw;
+  }
+
   .menù ul {
     display: none;
   }
@@ -333,6 +349,15 @@ footer p a {
     width: calc(80vw / 3);
     padding: 0 3vw;
     padding-left: 2.5vw;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 7vw 20vw;
+    justify-content: space-between;
+    height: 35vw;
+    font-size: 0.6rem;
   }
 }
 
