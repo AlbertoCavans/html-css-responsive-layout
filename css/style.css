@@ -68,11 +68,9 @@ a {
 
 .box-logo {
   /* DEBUG */
-  height: 14vw;
-  width: 25vw;
-  background-color: pink;
+  height: 12vw;
+  width: 21vw;
   padding: 2px;
-  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,11 +80,10 @@ a {
   /* DEBUG */
   height: 14vw;
   width: 14vw;
-  background-color: pink;
-  padding: 6px;
+  color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .menù ul {
