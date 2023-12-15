@@ -486,6 +486,15 @@ footer p a {
     height: 25vw;
   }
 
+  /* ? ABOUT US SECTION */
+
+  .about-us-section .container-slim .row .col:first-child {
+    width: calc((60vw / 3) * 2);
+  }
+  .about-us-section .container-slim .row .col {
+    width: calc(60vw / 3);
+  }
+
   /* ? GET STARTED SECTION */
 
   #center-container {
