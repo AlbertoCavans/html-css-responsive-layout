@@ -463,6 +463,10 @@ footer p a {
     min-height: 10vw;
   }
 
+  .partners-section .row .col .card {
+    background-color: hsl(243.66deg 60.29% 73.33%);
+  }
+
   /* ? BENEFITS SECTION */
 
   .benefits-section .container {
