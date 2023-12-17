@@ -461,7 +461,7 @@ footer p a {
   }
 
   .row .col {
-    min-height: 60vw;
+    min-height: 80vw;
   }
 
   section:nth-of-type(even) {
@@ -469,11 +469,11 @@ footer p a {
   }
 
   .row .col .card {
-    height: 60vw;
+    height: 80vw;
   }
 
   .row .col .card .row .col {
-    height: 60vw;
+    height: 80vw;
   }
 
   .menù ul {
@@ -494,6 +494,19 @@ footer p a {
   .overview-section .container .row .col {
     width: calc(100% / 3);
     padding: 0 3vw;
+  }
+
+  .overview-section .container .row .col .card .row .col {
+    align-items: start;
+    align-items: start;
+  }
+
+  .overview-section .container .row .col .card h3 {
+    font-size: 3.6vw;
+  }
+
+  .row .col-overview-section .card p {
+    font-size: 3vw;
   }
 
   /* ? PLANNING SECTION */
