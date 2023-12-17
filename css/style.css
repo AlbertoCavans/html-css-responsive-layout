@@ -130,6 +130,7 @@ section:nth-of-type(even) .row .col {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  border-radius: 5vw;
 }
 
 .row .col .card {
@@ -224,11 +225,33 @@ section:nth-of-type(even) .row .col {
 
 /* ? PARTNERS SECTION */
 
+.label {
+  color: rgb(17 17 17);
+  text-align: center;
+}
+
+.label h3 {
+  color: rgb(151 146 228);
+  font-size: 1.8rem;
+}
+
 .partners-section .row .col:first-child {
   background-color: transparent;
 }
 .partners-section .row .col .card {
   background-color: hsl(243.66deg 60.29% 73.33%);
+  height: 120vw;
+  padding: 5vw;
+}
+
+.partners-section .row .col .card .text {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 100%;
 }
 
 .photo-partner {
@@ -244,21 +267,50 @@ section:nth-of-type(even) .row .col {
 
 /* ? BENEFIT SECTION */
 
-.benefits-section .row .col {
-  display: flex;
-  align-items: start;
-}
-
 .benefits-section .row .col .card {
   background-color: white;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 5vw;
+  color: rgb(151 146 228);
+  height: 100vw;
+  border-radius: 5vw;
+}
+
+.benefits-section .row .col .card h3 {
+  font-size: 2rem;
+}
+
+.benefits-section .row .col .card h4 {
+  font-size: 1.5rem;
+}
+
+.benefits-section .row .col .card p {
+  color: rgb(17 17 17);
 }
 
 .benefits-section h3 {
   text-align: center;
 }
 
+.benefits-section .row .col .card .button-purple {
+  background-color: rgb(151 146 228);
+  width: 27vw;
+  height: 10vw;
+  font-size: 1rem;
+  border-radius: 10vw;
+  color: white;
+}
+
 /* ? ABOUT US */
 
+.about-us-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container-slim {
   margin: 0 5vw;
   width: 80%;
@@ -268,31 +320,92 @@ section:nth-of-type(even) .row .col {
   background-color: transparent;
   width: 70vw;
   margin: 5vw auto;
+  height: 130vw;
+  align-items: start;
+}
+
+.about-us-section .row .col h2 {
+  color: rgb(151 146 228);
+  font-size: 2rem;
+  text-align: left;
 }
 
 .photo-founder {
   margin-left: 3vw;
   align-self: flex-start;
-  position: relative;
 }
 
 .photo-founder img {
   width: 40vw;
   height: 40vw;
   border-radius: 50%;
+  position: relative;
+}
+
+.photo-founder i {
+  position: absolute;
+  color: rgb(151 146 228);
+  font-size: 3rem;
+  left: 47vw;
+}
+
+.about-us-section .row .col h3 {
+  color: rgb(151 146 228);
+  font-size: 2rem;
+}
+
+.about-us-section .row .col .button-purple {
+  background-color: rgb(151 146 228);
+  width: 55vw;
+  height: 10vw;
+  font-size: 1rem;
+  border-radius: 10vw;
+  color: white;
 }
 
 /* ? GET STARTED SECTION */
 
 #center-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   padding: 3rem 20vw;
   text-align: center;
   background-color: hsl(243.66deg 60.29% 73.33%);
   color: white;
+  height: 150vw;
+}
+
+#center-container h6 {
+  font-size: 0.8rem;
+}
+
+#center-container h3 {
+  font-size: 1.5rem;
+}
+
+#center-container h2 {
+  font-size: 3rem;
+  color: rgb(253 193 95);
+}
+
+#center-container a .button-big {
+  background-color: white;
+  width: 60vw;
+  height: 15vw;
+  font-size: 1rem;
+  border-radius: 10vw;
+  color: rgb(151 146 228);
+}
+
+#center-container address {
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
+#center-container address span {
+  text-decoration: underline;
 }
 
 /* FOOTER */
