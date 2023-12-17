@@ -446,7 +446,6 @@ footer p a {
     /* DEBUG */
     height: 3vw;
     width: 7vw;
-    background-color: pink;
     padding: 8px;
   }
 
@@ -458,21 +457,20 @@ footer p a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
   }
 
   .menù ul {
     display: flex;
     align-items: center;
-    background-color: pink;
   }
 
   .menù ul li {
     height: 3vw;
-    width: 4vw;
-    background-color: gray;
+    width: 7vw;
     margin: 0;
-    border: 3px dashed red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .menù i {
