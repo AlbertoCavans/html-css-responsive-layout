@@ -198,11 +198,28 @@ section:nth-of-type(even) .row .col {
 
 .planning-section .row #planning-transparent-col {
   background-color: transparent;
+  height: 150vw;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-.planning-section .row .col:first-child h3,
-.planning-section .row .col:first-child p {
-  align-self: self-start;
+.planning-section .container .row .white-col {
+  color: rgb(17 17 17);
+  border-radius: 5vw;
+  height: 150vw;
+  padding: 5vw;
+  text-align: center;
+}
+
+.planning-section .container .row .white-col .button-purple {
+  background-color: rgb(151 146 228);
+  width: 10vw;
+  height: 10vw;
+  font-size: 1rem;
+  border-radius: 10vw;
+  color: rgb(17 17 17);
 }
 
 /* ? PARTNERS SECTION */
