@@ -206,12 +206,14 @@ section:nth-of-type(even) .row .col {
   align-items: flex-start;
 }
 
-.planning-section .container .row .white-col {
+.planning-section .container .row .white-card {
   color: rgb(17 17 17);
   border-radius: 5vw;
   height: 150vw;
   padding: 5vw;
   text-align: center;
+  background-color: white;
+  font-size: 1rem;
 }
 
 .planning-section .container .row .white-col .button-purple {
@@ -461,7 +463,7 @@ footer p a {
   }
 
   .row .col {
-    min-height: 80vw;
+    min-height: 60vw;
   }
 
   section:nth-of-type(even) {
@@ -469,11 +471,11 @@ footer p a {
   }
 
   .row .col .card {
-    height: 80vw;
+    height: 60vw;
   }
 
   .row .col .card .row .col {
-    height: 80vw;
+    height: 60vw;
   }
 
   .menù ul {
@@ -486,9 +488,37 @@ footer p a {
     min-height: 60vw;
   }
 
+  .container .row .col {
+    margin: 2vw auto;
+  }
+
   /* ? OVERVIEW SECTION */
   .overview-section .container .row .col:first-child {
     width: calc((100% / 3) * 2);
+  }
+
+  .overview-section .container .row .col {
+    padding: 0 2vw;
+  }
+
+  .overview-section .container .row .col:first-child .card {
+    align-items: start;
+  }
+
+  .overview-section .container .row .col:first-child .card .row {
+    flex-direction: column;
+  }
+
+  .overview-section .container .row .col:first-child .row .col {
+    height: 30vw;
+    min-height: 30vw;
+    width: 40vw;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .overview-section .container .row .col:first-child .row .col:first-child {
+    width: 60vw;
   }
 
   .overview-section .container .row .col {
@@ -496,39 +526,100 @@ footer p a {
     padding: 0 3vw;
   }
 
-  .overview-section .container .row .col .card .row .col {
-    align-items: start;
-    align-items: start;
+  .container .row .col .card-overview-section {
+    padding: 3vw;
+  }
+
+  .container .row .col .card-overview-section {
+    height: 60vw;
+  }
+
+  .overview-section .container .row .col .card .row {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
   }
 
   .overview-section .container .row .col .card h3 {
-    font-size: 3.6vw;
+    font-size: 3vw;
   }
 
   .row .col-overview-section .card p {
-    font-size: 3vw;
+    font-size: 2.5vw;
+  }
+
+  .button-blue {
+    background-color: rgb(0 132 253);
+    width: 20vw;
+    height: 5vw;
+    font-size: 2vw;
+    border-radius: 5vw;
+    color: white;
   }
 
   /* ? PLANNING SECTION */
 
+  #planning-transparent-col h2 {
+    font-size: 7vw;
+  }
+
+  .planning-section .row #planning-transparent-col {
+    height: 130vw;
+  }
+
+  .planning-section .container .row .white-col .white-card {
+    height: 100vw;
+  }
+
+  .planning-section .container .row .white-col p {
+    font-size: 2.5vw;
+  }
+
+  .planning-section .container .row .white-col .button-purple {
+    background-color: rgb(151 146 228);
+    width: 7vw;
+    height: 7vw;
+    font-size: 3vw;
+    border-radius: 10vw;
+    color: rgb(17 17 17);
+  }
+
   /* ? PARTNERS SECTION */
+
+  .partners-section .container .row {
+    display: flex;
+  }
+
+  main .partners-section .container .row .label {
+    color: rgb(17 17 17);
+    text-align: center;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vw;
+    align-items: center;
+  }
+
+  .label h3 {
+    color: rgb(151 146 228);
+    font-size: 4.7vw;
+  }
 
   .partners-section .container .row .col {
     width: 80vw;
     margin: 5vw auto;
-    max-height: 20%;
+    max-height: 30vw;
     min-height: 20vw;
     display: block;
   }
 
-  .partners-section .row .col .card {
-    width: 100%;
-    max-height: 30vw;
-    min-height: 30vw;
-  }
-
   .photo-partner {
-    margin-left: 3vw;
+    margin: 0;
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .photo-partner img {
@@ -537,52 +628,144 @@ footer p a {
     border-radius: 50%;
   }
 
-  .partners-section .container .row .col .card {
-    display: block;
-    content: "";
-    clear: both;
-  }
-
-  .partners-section .container .row .col .card div {
-    float: left;
-    width: 30vw;
-  }
-
   .partners-section .container .row .col .card .text {
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: start;
     flex-direction: column;
+    font-size: 2vw;
+    width: 50vw;
+    margin-left: 3vw;
+  }
+
+  .partners-section .container .row .col .card {
+    width: 100%;
+    margin: 1vw auto;
+    background-color: hsl(243.66deg 60.29% 73.33%);
+    display: flex;
+    flex-direction: row;
+    padding: 3vw;
+    max-height: 30vw;
+    min-height: 30vw;
   }
 
   /* ? BENEFITS SECTION */
 
   .benefits-section .container .row .col {
     width: 40vw;
-    margin: 5vw auto;
-    min-height: 40vw;
+    margin: 2.5vw auto;
+    min-height: 45vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
+  .benefits-section .row .col .card {
+    height: 45vw;
+    min-height: 45vw;
+    padding: 3vw;
+  }
+
+  .benefits-section .row .col .card h4 {
+    font-size: 3vw;
+  }
+
+  .benefits-section .row .col .card p {
+    font-size: 2.2vw;
+  }
+
+  .benefits-section .row .col .card .button-purple {
+    width: 20vw;
+    height: 6vw;
+    font-size: 2.5vw;
+    border-radius: 10vw;
+  }
+
   /* ? ABOUT US SECTION */
+
   .container-slim {
-    padding: 0 10vw;
+    margin: 0 5vw;
+    padding: 0 5vw;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .about-us-section .container-slim .row .col:first-child {
     width: calc((80vw / 3) * 2);
-    padding-right: 2.5vw;
+    padding: 5vw 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vw;
   }
 
   .about-us-section .container-slim .row .col {
     width: calc(80vw / 3);
     padding: 0 3vw;
     padding-left: 2.5vw;
+    height: 70vw;
+  }
+
+  .about-us-section .container-slim .row .founder {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 5vw 0;
+  }
+
+  .photo-founder img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .photo-founder i {
+    position: absolute;
+    color: rgb(151 146 228);
+    font-size: 3rem;
+    left: 82vw;
+  }
+
+  .about-us-section .row .col h3 {
+    font-size: 3.2vw;
+  }
+
+  .about-us-section .row .col .button-purple {
+    background-color: rgb(151 146 228);
+    width: 28vw;
+    height: 5vw;
+    font-size: 2vw;
+    border-radius: 10vw;
+    color: white;
+    margin-top: 3vw;
+  }
+
+  /* ? GET STARTED SECTION */
+
+  #center-container {
+    height: 70vw;
+    padding: 4vw 18vw;
+  }
+
+  #center-container p {
+    font-size: 2vw;
+  }
+
+  #center-container a .button-big {
+    background-color: white;
+    width: 35vw;
+    height: 8vw;
+    font-size: 2.2vw;
+    border-radius: 10vw;
+    color: rgb(151 146 228);
+  }
+
+  #center-container address {
+    font-size: 2vw;
   }
 
   /* FOOTER */
@@ -619,6 +802,7 @@ footer p a {
 
   .row .col .card {
     height: calc(60vw / 3);
+    border-radius: 2.5vw;
   }
 
   .row {
@@ -699,10 +883,46 @@ footer p a {
 
   .overview-section .container .row .col .card {
     min-height: 20vw;
+    height: 20vw;
   }
 
-  .overview-section .container .row .col:first-child {
-    width: calc((60vw / 3 * 2));
+  .overview-section .container .row .col:first-child .card .row {
+    flex-direction: row;
+  }
+
+  .overview-section .container .row .col:first-child .row .col {
+    padding: 0 2vw;
+    height: 20vw;
+    min-height: 20vw;
+  }
+
+  .overview-section .container .row .col:first-child .row .col {
+    width: 20vw;
+  }
+
+  .overview-section .container .row .col:first-child .row .col:first-child {
+    width: 20vw;
+  }
+
+  .overview-section .container .row .col:first-child .row .col .box {
+    width: 15vw;
+  }
+
+  .overview-section .container .row .col .card h3 {
+    font-size: 1.3vw;
+  }
+
+  .row .col-overview-section .card p {
+    font-size: 1vw;
+  }
+
+  .button-blue {
+    background-color: rgb(0 132 253);
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.2vw;
+    border-radius: 2.5vw;
+    color: white;
   }
 
   /* ? PLANNING SECTION */
@@ -711,11 +931,56 @@ footer p a {
     display: block;
     content: "";
     clear: both;
+    width: 50vw;
   }
 
   .planning-section .container .row .col {
     float: left;
-    width: 30vw;
+    width: 40vw;
+  }
+
+  .planning-section .container .row .col {
+    margin: 0 auto;
+  }
+
+  .planning-section .row #planning-transparent-col {
+    height: 50vw;
+    width: 25vw;
+    font-size: 1.2vw;
+    justify-content: space-between;
+  }
+
+  .planning-section .container .row .white-col {
+    height: 55vw;
+    width: 25vw;
+    padding: 2vw;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background-color: transparent;
+  }
+
+  .planning-section .container .row .white-col .white-card {
+    border-radius: 2.5vw;
+    padding: 2.5vw;
+    height: 35vw;
+  }
+
+  #planning-transparent-col h2 {
+    font-size: 2vw;
+  }
+
+  .planning-section .container .row .white-col p {
+    font-size: 1vw;
+  }
+
+  .planning-section .container .row .white-col .button-purple {
+    background-color: rgb(151 146 228);
+    width: 3vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    border-radius: 3vw;
+    color: rgb(17 17 17);
   }
 
   /* ? PARTNERS SECTION */
@@ -729,10 +994,23 @@ footer p a {
     height: 80vw;
   }
 
+  main .partners-section .container .row .label {
+    font-size: 1.5vw;
+  }
+
+  .label h3 {
+    font-size: 2.7vw;
+  }
+
+  .label p {
+    font-size: 1.2vw;
+  }
+
   .partners-section .container-partners {
     flex-direction: column;
     height: 60vw;
   }
+
   .partners-section .container .row {
     display: flex;
   }
@@ -745,6 +1023,7 @@ footer p a {
     margin: 3vw auto;
     max-height: 10vw;
     min-height: 10vw;
+    width: 60vw;
   }
 
   .partners-section .container .row .col .card {
@@ -756,9 +1035,9 @@ footer p a {
     display: flex;
     flex-direction: row;
   }
+
   .photo-partner {
-    margin-left: 3vw;
-    margin-top: 1vw;
+    margin-left: 1vw;
     width: 13vw;
   }
 
@@ -774,6 +1053,11 @@ footer p a {
   .photo-partner .text {
     flex-grow: 3;
   }
+
+  .partners-section .container .row .col .card .text {
+    font-size: 1.2vw;
+  }
+
   /* ? BENEFITS SECTION */
 
   .benefits-section .container {
@@ -795,21 +1079,112 @@ footer p a {
   .benefits-section .container .row .col .card {
     height: 25vw;
     min-height: 20vw;
+    border-radius: 2.5vw;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefits-section .row .col .card h4 {
+    font-size: 1.5vw;
+  }
+
+  .benefits-section .row .col .card p {
+    font-size: 1vw;
+  }
+
+  .benefits-section .row .col .card .button-purple {
+    width: 7vw;
+    height: 2.7vw;
+    font-size: 1vw;
+    border-radius: 10vw;
   }
 
   /* ? ABOUT US SECTION */
 
-  .about-us-section .container-slim .row .col:first-child {
-    width: calc((60vw / 3) * 2);
+  .container-slim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  .about-us-section .container-slim .row .col:first-child {
+    width: 38vw;
+    padding: 2vw 1vw;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2vw;
+  }
+
   .about-us-section .container-slim .row .col {
-    width: calc(60vw / 3);
+    width: 20vw;
+    padding: 0 1vw;
+    padding-left: 2.5vw;
+    height: 40vw;
+  }
+
+  .about-us-section .container-slim .row .founder {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 5vw 0;
+    margin: 2vw auto;
+  }
+
+  .photo-founder img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .about-us-section .row .col {
+    margin: 2vw auto;
+  }
+
+  .photo-founder i {
+    left: 70vw;
+  }
+
+  .about-us-section .row .col h3 {
+    font-size: 2vw;
+  }
+
+  .about-us-section .row .col .button-purple {
+    background-color: rgb(151 146 228);
+    width: 12vw;
+    height: 2vw;
+    font-size: 0.9vw;
+    border-radius: 4vw;
+    color: white;
+    margin-top: 3vw;
   }
 
   /* ? GET STARTED SECTION */
 
   #center-container {
-    padding: 0 20vw;
+    padding: 0 28vw;
+    height: 30vw;
+  }
+
+  #center-container h3 {
+    font-size: 2rem;
+  }
+
+  #center-container p {
+    font-size: 1.2vw;
+  }
+
+  #center-container a .button-big {
+    width: 17vw;
+    height: 5vw;
+    font-size: 1rem;
+    border-radius: 10vw;
+    color: rgb(151 146 228);
+  }
+
+  #center-container address {
+    font-size: 1vw;
   }
 
   /* FOOTER */
